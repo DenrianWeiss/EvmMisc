@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EasyERC20Faucet</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
+            integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw"
+            crossorigin="anonymous"
+    />
+    <script
+            src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
+            integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
+            crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.0/dist/web3.min.js"></script>
+    <script src="action.js"></script>
+    <script></script>
+</head>
+<body>
+<div class="mdui-container">
+<div class="mdui-textfield">
+    <label class="mdui-textfield-label">RPC地址</label>
+    <input class="mdui-textfield-input" type="text" id="rpc"/>
+</div>
+<div class="mdui-textfield">
+    <label class="mdui-textfield-label">ERC20合约地址</label>
+    <input class="mdui-textfield-input" type="text" id="erc20"/>
+</div>
+<div class="mdui-textfield">
+    <label class="mdui-textfield-label">原地址</label>
+    <input class="mdui-textfield-input" type="text" id="src"/>
+</div>
+<div class="mdui-textfield">
+    <label class="mdui-textfield-label">目标地址</label>
+    <input class="mdui-textfield-input" type="text" id="dst"/>
+</div>
+<div class="mdui-textfield">
+    <label class="mdui-textfield-label">数量</label>
+    <input class="mdui-textfield-input" type="text" id="amount"/>
+</div>
+<button class="mdui-btn mdui-ripple" onclick="transfer()">转</button>
+</div>
+</body>
+</html>
